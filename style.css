@@ -1,0 +1,1124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --closeToWhite:rgba(255, 255, 255, 0.807);
+}
+body{
+ width:100%;
+ height: 100vh;
+ overflow-x: hidden;
+}
+.wrapper{
+  width: 100%;
+    background: url(imgs/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.nav{
+    width:100%; 
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+z-index: 3;
+
+
+
+}
+.nav .icon {
+    margin: 20px;
+}
+.nav ul{
+    display: flex;
+    float: right;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 65%;
+    background:url(imgs/home/background-home-desktop.jpg) transparent 100%;
+    background-position:  849.5px ;
+    height: 70px;
+    padding: 25px;
+align-items: center;
+
+}
+.nav ul li.active{
+    border-bottom: 3px solid white;
+ padding: 25px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    padding-left: 7px;
+    
+}
+
+.nav ul li span{
+    font-weight: 900;
+    
+    color: white;
+}
+.container{
+    width: 98vw;
+    display: flex;
+    height: 60vh;
+   
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .leftSide{
+    width: 50%;
+    overflow: hidden;
+    color: white;
+}
+
+.container .leftSide h3{
+padding-bottom: 10px;
+font-weight: 100;
+color: var(--closeToWhite);
+}
+
+.container .leftSide .space{
+    font-size:100px ;
+    font-weight: 100;
+    padding-bottom:20px ;
+}
+.container .leftSide .text{
+    width: 330px;
+    font-size:14px;
+    color: var(--closeToWhite);
+}
+.container .rightSide a{
+    text-decoration: none;
+    color: black;
+}
+
+   
+.container .rightSide .explore{
+    font-size:25px;
+    padding: 65px 25px;
+    background-color: white; 
+    border-radius: 50%;
+    transform: translate(-50px,50px);
+    
+}
+.container .rightSide .explore:hover{
+ box-shadow: 0px 0px 10px 20px rgba(255, 255, 255, 0.434), 0px 0px 10px 30px rgba(255, 255, 255, 0.255);
+background: silver;
+transition:1s linear;
+
+}
+.wrapper2{
+    width: 100%;
+    background: url(imgs/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.wrapper2 .nav ul{
+    background:rgba(0, 0, 0, 0.188) ;
+}
+.wrapper2 .container2{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height:83%;
+    display: none;
+}
+.wrapper2 .container2.shown{
+    display: flex;
+}
+.wrapper2 .container2 .leftSide{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 93%;
+} 
+.wrapper2 .container2 .leftSide h3{
+    color: rgba(255, 255, 255, 0.992);
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: translate(-30%,-70%);
+    margin-bottom: 40px;
+}
+.wrapper2 .container2 .leftSide h3 span{
+    margin-right: 10px;
+    color: rgba(192, 192, 192, 0.513);
+}
+.wrapper2 .container2 .leftSide img{
+    width: 350px;
+    height: 350px;
+}
+.wrapper2 .container2 .rightSide{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    height: 93%;
+}
+.wrapper2 .container2 .rightSide .select{
+    cursor: pointer;
+display: flex;
+flex-direction: row; 
+width: 60%;
+justify-content: space-between;
+list-style: none;
+font-size: 15px;
+margin-bottom:30px;
+color: var(--closeToWhite);
+}
+.wrapper2 .container2 .rightSide .select .slct{
+    padding-bottom: 10px;
+    border-bottom:2px solid white ;
+}
+.wrapper2 .container2 .rightSide .content h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.wrapper2 .container2 .rightSide .content .description{
+   margin-top: 20px; 
+   width: 80%;
+   font-size: 15px;
+   color: var(--closeToWhite);
+   line-height: 24px;
+}
+.wrapper2 .container2 .rightSide .content .info{
+    display: flex;
+    width:60%;
+    justify-content: space-between;
+    margin-top:50px;
+    font-size: 14px;
+    color: var(--closeToWhite);
+    height:90px;
+
+}
+
+ .info .distance div,.period div{
+    word-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+ .info .distance span,.period span{
+    margin-top: 30px;
+    font-size: 23px; 
+    color: white;
+}
+
+
+.wrapper3{
+    background: url(imgs/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height:100%;
+    position: relative;
+     overflow-x: hidden;
+    
+}
+.wrapper3 .nav ul{
+    background:rgba(0, 0, 0, 0.188) ;
+}
+.wrapper3 .container3{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height:83%;
+    display: none;
+    
+}
+.wrapper3 .container3.marked{
+    display: flex;
+}
+.wrapper3 .container3 .leftSide{
+width: 50%;
+display: block;
+margin: 100px 65px 0 100px;
+height: 93%;
+}
+.wrapper3 .container3 .leftSide h3{
+    color: rgba(255, 255, 255, 0.992);
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 9px;
+   transform: translateY(-50px);
+    margin-bottom: 40px;
+}
+.wrapper3 .container3 .leftSide h3 span{
+    margin-right: 10px;
+    color: rgba(192, 192, 192, 0.513);
+}
+.wrapper3 .container3 .leftSide .occupation{
+  
+    font-size: 20px;
+    color: var(--closeToWhite);
+    margin-bottom: 15px;    
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.wrapper3 .container3 .leftSide .name{
+    font-size: 39px;
+    color:white;
+    margin-bottom: 15px;
+    word-spacing: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.wrapper3 .container3 .leftSide .description{
+    margin-top: 20px; 
+   width: 80%;
+   font-size: 16px;
+   color: var(--closeToWhite);
+   line-height: 24px;
+}
+.wrapper3 .container3 .leftSide .choose{
+    
+    transform: translateY(100px);
+    width: 120px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.wrapper3 .container3 .leftSide .choose .crew{
+width: 10px;
+height: 10px;
+background-color: rgba(192, 192, 192, 0.67);
+border-radius: 50%;
+cursor: pointer;
+}
+.wrapper3 .container3 .leftSide .choose .crew.chosen{
+    background-color: white;
+}
+
+.wrapper3 .container3 .rightSide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: start;
+}
+
+
+.wrapper3 .container3 .rightSide .imgcrew{
+    width: 400px;
+    height:420px;
+}
+.wrapper3 .container3 .rightSide .imgcrew img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wrapper4{
+    background: url(imgs/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.wrapper4 .nav ul{
+    background:rgba(0, 0, 0, 0.188) ;
+}
+.wrapper4 .container4{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height:83%;
+    display: none;
+    
+}
+.wrapper4 .container4.clicked{
+    display: flex;
+}
+.wrapper4 .container4 .leftSide{
+  
+    color: white;
+    word-wrap: break-word;
+    width: 65%;
+    margin: 30px 10px 0 130px;
+    
+}
+.wrapper4 .container4 .leftSide h3{
+    color: rgba(255, 255, 255, 0.992);
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    margin-bottom: 85px;
+    
+}
+.wrapper4 .container4 .leftSide h3 span{
+    margin-right: 10px;
+    color: rgba(192, 192, 192, 0.513);
+}
+    .wrapper4 .container4 .leftSide .insideContainer{
+        display: flex;
+    }    
+
+    .container4 .leftSide .insideContainer .choose{
+        margin-right: 60px;
+    }
+    .container4 .leftSide .insideContainer .choose .techno{
+        margin-bottom: 30px;
+        padding: 25px 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .container4 .leftSide .insideContainer .choose .techno.pointed{
+        background-color: white;
+        color: black;
+    }
+    .container4 .leftSide .insideContainer .info{
+        width: 64%;
+        
+    }
+    .container4 .leftSide .insideContainer .info .field{
+        color: var(--closeToWhite);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .container4 .leftSide .insideContainer .info .name{
+        font-size: 39px;
+    color:white;
+    margin-bottom: 15px;
+    word-spacing: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    }
+    .container4 .leftSide .insideContainer .info .description{
+        font-size: 16px;
+        color: var(--closeToWhite);
+        line-height: 24px;
+    }
+    .container4 .rightSide{
+        width: 35%;
+        height: 100%;
+      
+    }
+    .container4 .rightSide .imgtechno{
+        margin-top: 10px;
+        width: 100%;
+        height: 90%;
+       
+        
+    }
+    .container4 .rightSide .imgtechno img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+    @media all and (max-width:520px) {
+        .wrapper,.wrapper2,.wrapper3,.wrapper4{
+            overflow-x: hidden;
+        }
+     /* first page */
+     .wrapper{
+        width: 100%;
+          background: url(imgs/home/background-home-mobile.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+         
+      }
+      .nav{
+          width:100%; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      
+      }
+      .nav .icon {
+          margin: 20px;
+          position: relative;
+
+      }
+      .nav ul{
+          display: none;
+          float: right;
+         text-align: right;
+          width: 300px;
+          background:rgba(0, 0, 0, 0.861);
+          position: absolute;
+          right: -300px;
+          top: 0;
+          z-index: 1;
+          height: 1000px;
+        transition: 0.5s linear;
+     
+      }
+      .nav  .open{
+       width: 25px;
+       height: 25px;
+       background: url(imgs/shared/icon-hamburger.svg);
+       background-size: cover;
+       background-repeat: no-repeat;
+       float: right;
+       margin: 10px 25px;
+       z-index: 3;
+       cursor:pointer ;
+      }
+      .nav ul li{
+        margin-top: 60px;
+      }
+      .nav ul li.active{
+
+       
+        border-bottom: none;
+ 
+     padding: 0;
+     display: block;
+     align-items: center;
+     justify-content: right;
+    
+    }
+  
+     
+      .nav ul li.active  a{
+          display: inline;
+          border-bottom: 3px solid white;
+          padding: 30px 0;
+      }
+      .nav ul li  span{
+         
+          display: none;
+      }
+      .container{
+          width: 98vw;
+          display: block;
+         
+       
+          
+      }
+      
+      .container .leftSide{
+          width: 100%;
+          overflow: none;
+          color: white;
+          text-align: center;
+          margin-top: 20px;
+      }
+      .container .leftSide .text{
+          width:80%;
+          font-size:16px;
+          
+          margin: 0 auto;
+          color: var(--closeToWhite);
+          word-spacing: 3px;
+      }
+      .container .rightSide{
+          font-size:25px;
+          padding:0;
+          background-color: transparent;
+          border-radius: 0;
+          height: 50%;
+          transform: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top:80px ;
+      } 
+      .container .rightSide .explore{
+color: black;
+background: white;
+padding: 70px 40px;
+border-radius: 50%;
+      }
+
+
+   /* the second page */
+      .wrapper2{
+        background: url(imgs/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .wrapper2 .nav ul{
+        background:rgba(0, 0, 0, 0.861) ;
+    }
+    .wrapper2 .container2{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:83%;
+        display: none;
+        overflow: scroll;
+    }
+    .wrapper2 .container2.shown{
+        display: block;
+    }
+    .wrapper2 .container2 .leftSide{
+        width: 100%;
+        height: 50%;
+
+    } 
+    .wrapper2 .container2 .leftSide h3{ 
+        transform: translate(0,0);
+    }
+   
+    .wrapper2 .container2 .leftSide img{
+        width: 200px;
+        height: 100%;
+    }
+    .wrapper2 .container2 .rightSide{
+        width: 100%;
+      text-align: center;
+        height: 50%;
+        position: relative;
+        top: 100px;
+    }
+    .wrapper2 .container2 .rightSide .select{
+    width:100%;
+    justify-content: space-evenly;
+    font-size: 14px;
+    margin-bottom:20px;
+    }
+    .wrapper2 .container2 .rightSide .content h1{
+        font-size:55px;
+        font-weight: 500;
+    }
+    .wrapper2 .container2 .rightSide .content .description{
+   
+      margin: 10px auto;
+    }
+    .wrapper2 .container2 .rightSide .content .info{
+      
+        width:100%;
+        justify-content: space-evenly;
+        margin-top:30px;
+    }
+
+    /* third page */
+    
+    
+    .wrapper3{
+        background: url(imgs/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .wrapper3 .nav ul{
+        background:rgba(0, 0, 0, 0.861) ;
+    }
+    .wrapper3 .container3{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:83%;
+        display: none;
+        
+    }
+    .wrapper3 .container3.marked{
+        display: block;
+    }
+    .wrapper3 .container3 .leftSide{
+    width: 100%;
+    margin: 0;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    top: 330px;
+    }
+    .wrapper3 .container3 .leftSide h3{
+      
+        position: relative;
+        bottom: 260px;
+    }
+ 
+    .wrapper3 .container3 .leftSide .occupation{
+      
+        font-size: 16px;
+      
+    }
+    .wrapper3 .container3 .leftSide .name{
+        font-size: 23px;
+       
+    }
+    .wrapper3 .container3 .leftSide .description{
+       width: 85%;
+       line-height: 25px;
+       margin: 10px auto; 
+    }
+    .wrapper3 .container3 .leftSide .choose{
+        
+        position: relative;
+        bottom: 360px;
+        margin: 0 auto;
+        width:40%;
+     
+        justify-content: space-evenly;
+    } 
+ 
+    .wrapper3 .container3 .leftSide .choose .crew.chosen{
+        background-color: white;
+        
+    }
+    
+    .wrapper3 .container3 .rightSide{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: start;
+        position: relative;
+        bottom: 210px;
+    }
+    
+    
+    .wrapper3 .container3 .rightSide .imgcrew{
+        width: 100%;
+        height:240px;
+     
+        margin: 0 auto;
+        
+
+    }
+
+/* the last page */
+
+    .wrapper4{
+        background: url(imgs/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .wrapper4 .nav ul{
+        background:rgba(0, 0, 0, 0.868) ;
+    }
+    .wrapper4 .container4{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:83%;
+        display: none;
+        
+    }
+    .wrapper4 .container4.clicked{
+        display: block;
+    }
+    .wrapper4 .container4 .leftSide{
+  
+        width: 100%;
+        margin: 0;
+        
+    }
+    .wrapper4 .container4 .leftSide h3{
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+        .wrapper4 .container4 .leftSide .insideContainer{
+            display: block;
+            align-items: center;
+            position: relative;
+            top: 420px;
+        }    
+    
+        .container4 .leftSide .insideContainer .choose{
+            display: flex;
+            margin-right: 0;
+            justify-content: center;
+            width: 100%;
+          
+        }
+      
+      
+        .container4 .leftSide .insideContainer .info{
+            width: 100%;
+            
+        }
+        .container4 .leftSide .insideContainer .info .field{
+       
+            text-align: center;
+        }
+        .container4 .leftSide .insideContainer .info .name{
+            font-size: 30px;
+   text-align: center;
+        }
+        .container4 .leftSide .insideContainer .info .description{
+           width: 70%;
+           margin: 0 auto;
+        }
+        .container4 .rightSide{
+            width: 100%;
+            height:50%;
+            position:relative;
+            bottom:  300px;          
+        }
+        .container4 .rightSide .imgtechno{
+           
+            width:100%;
+            
+     
+            
+        }
+        .container4 .rightSide .imgtechno img{
+          
+         object-fit:fill;
+           
+        }
+       
+    
+    }
+    @media all and (min-width:520px) and (max-width:880px){
+        .wrapper,.wrapper2,.wrapper3,.wrapper4{
+            overflow-x: hidden;
+        }
+     /* first page */
+     .wrapper{
+        width: 100%;
+          background: url(imgs/home/background-home-mobile.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+         
+      }
+  
+    .nav ul{
+        height: 80px;
+        background:rgba(0, 0, 0, 0.861) ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+ 
+       
+     
+        
+    }
+    .nav ul li.active{
+        
+        border-bottom: 3px solid white;
+ 
+     padding: 30px 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+    }
+    .nav ul li a{
+
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-weight: 100;
+        padding-right: 4px;
+        font-size: 13px;
+    }
+  
+    .nav ul li  span{
+   padding: 0;
+       display: none;
+    }
+    
+    
+    
+      .container{
+          width: 98vw;
+          display: block;
+         
+       
+          
+      }
+      
+      .container .leftSide{
+          width: 100%;
+          overflow: none;
+          color: white;
+          text-align: center;
+          margin-top: 20px;
+      }
+      .container .leftSide .text{
+          width:80%;
+          font-size:16px;
+          
+          margin: 0 auto;
+          color: var(--closeToWhite);
+          word-spacing: 3px;
+      }
+      .container .rightSide{
+          font-size:25px;
+          padding:0;
+          background-color: transparent;
+          border-radius: 0;
+          height: 50%;
+          transform: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top:80px ;
+      } 
+      .container .rightSide .explore{
+color: black;
+background: white;
+padding: 70px 40px;
+border-radius: 50%;
+      }
+
+
+   /* the second page */
+      .wrapper2{
+        background: url(imgs/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .wrapper2 .nav ul{
+        background:rgba(0, 0, 0, 0.861) ;
+    }
+    .wrapper2 .container2{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:83%;
+        display: none;
+        overflow: scroll;
+    }
+    .wrapper2 .container2.shown{
+        display: block;
+    }
+    .wrapper2 .container2 .leftSide{
+        width: 100%;
+        height: 50%;
+
+    } 
+    .wrapper2 .container2 .leftSide h3{ 
+        transform: translate(0,0);
+    }
+   
+    .wrapper2 .container2 .leftSide img{
+        width: 200px;
+        height: 100%;
+    }
+    .wrapper2 .container2 .rightSide{
+        width: 100%;
+      text-align: center;
+        height: 50%;
+        position: relative;
+        top: 100px;
+    }
+    .wrapper2 .container2 .rightSide .select{
+    width:100%;
+    justify-content: space-evenly;
+    font-size: 14px;
+    margin-bottom:20px;
+    }
+    .wrapper2 .container2 .rightSide .content h1{
+        font-size:55px;
+        font-weight: 500;
+    }
+    .wrapper2 .container2 .rightSide .content .description{
+   
+      margin: 10px auto;
+    }
+    .wrapper2 .container2 .rightSide .content .info{
+      
+        width:100%;
+        justify-content: space-evenly;
+        margin-top:30px;
+    }
+
+    /* third page */
+    
+    
+    .wrapper3{
+        background: url(imgs/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .wrapper3 .nav ul{
+        background:rgba(0, 0, 0, 0.861) ;
+    }
+    .wrapper3 .container3{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:83%;
+        display: none;
+        
+    }
+    .wrapper3 .container3.marked{
+        display: block;
+    }
+    .wrapper3 .container3 .leftSide{
+    width: 100%;
+    margin: 0;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    top: 350px;
+    
+    }
+    .wrapper3 .container3 .leftSide h3{
+      
+        position: relative;
+        bottom: 260px;
+    }
+ 
+    .wrapper3 .container3 .leftSide .occupation{
+      
+        font-size: 16px;
+      
+    }
+    .wrapper3 .container3 .leftSide .name{
+        font-size: 23px;
+       
+    }
+    .wrapper3 .container3 .leftSide .description{
+       width: 85%;
+       line-height: 25px;
+       margin: 10px auto; 
+    }
+    .wrapper3 .container3 .leftSide .choose{
+        
+        position: relative;
+        bottom: 320px;
+        margin: 0 auto;
+        width:40%;
+     
+        justify-content: space-evenly;
+    } 
+ 
+    .wrapper3 .container3 .leftSide .choose .crew.chosen{
+        background-color: white;
+        
+    }
+    
+    .wrapper3 .container3 .rightSide{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: start;
+        position: relative;
+        bottom: 180px;
+    
+    }
+    
+    
+    .wrapper3 .container3 .rightSide .imgcrew{
+        width: 100%;
+        height:240px;
+       
+        margin: 0 auto;
+        
+
+    }
+
+/* the last page */
+
+    .wrapper4{
+        background: url(imgs/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .wrapper4 .nav ul{
+        background:rgba(0, 0, 0, 0.868) ;
+    }
+    .wrapper4 .container4{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:83%;
+        display: none;
+        
+    }
+    .wrapper4 .container4.clicked{
+        display: block;
+    }
+    .wrapper4 .container4 .leftSide{
+  
+        width: 100%;
+        margin: 0;
+        
+    }
+    .wrapper4 .container4 .leftSide h3{
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+        .wrapper4 .container4 .leftSide .insideContainer{
+            display: block;
+            align-items: center;
+            position: relative;
+            top: 360px;
+        }    
+    
+        .container4 .leftSide .insideContainer .choose{
+            display: flex;
+            margin-right: 0;
+            justify-content: center;
+            width: 100%;
+          
+        }
+      
+      
+        .container4 .leftSide .insideContainer .info{
+            width: 100%;
+            
+        }
+        .container4 .leftSide .insideContainer .info .field{
+       
+            text-align: center;
+        }
+        .container4 .leftSide .insideContainer .info .name{
+            font-size: 30px;
+   text-align: center;
+        }
+        .container4 .leftSide .insideContainer .info .description{
+           width: 70%;
+           margin: 0 auto;
+        }
+        .container4 .rightSide{
+            width: 100%;
+            height:50%;
+            position:relative;
+            bottom:  240px;          
+        }
+        .container4 .rightSide .imgtechno{
+           
+            width:100%;
+            
+     
+            
+        }
+        .container4 .rightSide .imgtechno img{
+          
+         object-fit:fill;
+           
+        }
+       
+    }
+ 
+   
